@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Evolution Clicker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Exo+2:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1 class="title">COSMIC EVOLUTION CLICKER</h1>
+            <div class="faction-selector">
+                <button class="faction-btn" data-faction="techno">Технократы</button>
+                <button class="faction-btn" data-faction="bio">Биожизнь</button>
+                <button class="faction-btn" data-faction="psi">Псионики</button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="clicker-section">
+                <div class="cosmic-core" id="click-target">
+                    <div class="core-pulse"></div>
+                    <div class="particles-container" id="particles"></div>
+                </div>
+                <div class="energy-display">
+                    <h2>Энергия: <span id="energy-count">0</span></h2>
+                    <h3>ЭПС: <span id="eps-count">0</span></h3>
+                </div>
+            </div>
+
+            <div class="evolution-track">
+                <div class="track-stage active" data-stage="quantum">Квантовая</div>
+                <div class="track-stage" data-stage="atomic">Атомная</div>
+                <div class="track-stage" data-stage="molecular">Молекулярная</div>
+                <div class="track-stage" data-stage="cosmic">Космическая</div>
+                <div class="track-stage" data-stage="universal">Универсальная</div>
+            </div>
+        </div>
+
+        <div class="tech-tree-container">
+            <h2>Древо технологий</h2>
+            <div class="tech-tree" id="tech-tree"></div>
+        </div>
+
+        <div class="event-log" id="event-log"></div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
